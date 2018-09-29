@@ -8,14 +8,16 @@
   <body>
     <header class="header">
       <nav class="main-menu">
-        <div class="main-manu__item main-manu__caption">
-          <img src="img/logo1.svg" alt="логотип CAT ENERGY">
-          <img src="img/logo2.svg" alt="CAT ENERGY">
-          <button class="menu-button menu-button--close"></button>
-        </div>
-        <div class="main-manu__item">Главная</div>
-        <div class="main-manu__item">Каталог продукции</div>
-        <div class="main-manu__item">Подбор программы</div>
+        <ul class="main-menu__list">
+          <li class="main-manu__item">
+            <img src="#" alt="логотип CAT ENERGY">
+            <button class="menu-button menu-button--close"></button>
+          </li>
+          <li class="main-manu__item">Главная</li>
+          <li class="main-manu__item">Каталог продукции</li>
+          <li class="main-manu__item">Подбор программы</li>
+        </ul>
+
       </nav>
     </header>
     <main class="main">
@@ -40,10 +42,12 @@
       </section>
       <section class="how-it-works">
         <p class="how-it-works__title">Как это работает</p>
-        <p class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</p>
-        <p class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        <p class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        <p class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <ul class="how-it-works__list">
+          <li class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ul>
       </section>
       <section class="example">
         <p class="example__title">Живой пример</p>
@@ -78,19 +82,19 @@
         <img src="img/logo2.svg" alt="CAT ENERGY">
       </div>
       <div class="social">
-        <a class="social__vk" href="#">
+        <a class="social__item social__item--vk" href="#">
           <img src="#" alt="Вконтакте" aria-label="Вконтакте">
         </a>
-        <a class="social__in" href="#">
+        <a class="social__item social__item--in" href="#">
           <img src="#" alt="Инстаграм" aria-label="Инстаграм">
         </a>
-        <a class="social__fb" href="#">
-          <img src="#" alt="Фэйсбук" aria-label="Фэйсбук">
+        <a class="social__item social__item--fb" href="#">
+          <img src="#" alt="Фэйсбук" aria-label="Фейсбук">
         </a>
       </div>
-      <div class="htmlacademy">
-        <span>HTML Academy</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="copyright">
+        <span class="copyright__text">HTML Academy</span>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg"
                 alt="HTML Academy"
                 width="27"
