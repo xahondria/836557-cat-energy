@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="index.html">
+            <img src="#" alt="логотип CAT ENERGY">
+          </a>
+          <button class="menu-button menu-button--close" type="button"></button>
+        </li>
+        <li class="main-menu__item"><a href="index.html">Главная</a></li>
+        <li class="main-menu__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="main-menu__item"><a>Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="courses-form">
+      <h2 class="courses-form__title">Подбор программы</h2>
+      <p class="courses-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          Имя:*
+          <input type="text" value="Барсик" name="cats-name" required>
+        </label>
+        <label>
+          Вес (кг):*
+          <input type="text" value="7" name="cats-weight" required>
+        </label>
+        <label>
+          Возраст (лет):
+          <input type="text" value="7" name="cats-age">
+        </label>
+        <label>
+          <input type="radio" name="course" checked>
+          Похудение
+        </label>
+        <label>
+          <input type="radio" name="course">
+          Набор массы
+        </label>
+        <label>
+          <input type="radio" name="course">
+          Не знаю (Нужен ваш совет)
+        </label>
+        <fieldset class="form__user-contacts">
+          <legend>Контактные данные (владельца кота)</legend>
+          <label>
+            E-mail:*
+            <input type="email" value="kuklachev@gmail.com" name="email" required>
+          </label>
+          <label>
+            Телефон:*
+            <input type="tel" value="8 (960) 900-60-90" name="tel" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__comments">
+          <legend>Комментарий</legend>
+          <textarea name="comments">
+            Расскажите обо всех повадках кота
+          </textarea>
+        </fieldset>
+        <fieldset class="form__other">
+          <legend>Дополнительно</legend>
+          <label>
+            <input type="checkbox" name="sugar-substitute" checked>
+            Сахарозаменитель
+          </label>
+          <label>
+            <input type="checkbox" name="water">
+            Питьевая вода
+          </label>
+          <label>
+            <input type="checkbox" name="milk">
+            Молоко
+          </label>
+          <label>
+            <input type="checkbox" name="vitamin">
+            Витамины
+          </label>
+        </fieldset>
+        <button class="button" type="submit">Отправить заявку</button>
+        <p class="form__text">* — Обязательные поля</p>
+      </form>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__text-noticeable">приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Мы на карте</h2>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="logo">
+      <img src="#" alt="CAT ENERGY">
+    </div>
+    <div class="social">
+      <a class="social__item social__item--vk" href="#">
+        <img src="#" alt="Вконтакте" aria-label="Вконтакте">
+      </a>
+      <a class="social__item social__item--in" href="#">
+        <img src="#" alt="Инстаграм" aria-label="Инстаграм">
+      </a>
+      <a class="social__item social__item--fb" href="#">
+        <img src="#" alt="Фейсбук" aria-label="Фейсбук">
+      </a>
+    </div>
+    <div class="copyright">
+      <span class="copyright__text">HTML Academy</span>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg"
+              alt="HTML Academy"
+              width="27"
+              height="34">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
