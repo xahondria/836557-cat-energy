@@ -12,16 +12,21 @@
         <ul class="main-menu__list">
           <li class="main-menu__item">
             <a class="main-menu__link">
-              <img src="img/logo-mobile.svg"
+              <img class="main-menu__logo"
+                    src="img/logo-mobile.svg"
                     alt="логотип CAT ENERGY"
                     width="190"
                     height="37">
             </a>
-            <button class="menu-button menu-button--close" type="button"></button>
+            <button class="main-menu__hamburger main-menu__hamburger--close" type="button"></button>
           </li>
-          <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--active">
+              <span class="main-menu__text">Главная</span>
+            </a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="catalog.html"><span class="main-menu__text">Каталог продукции</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html"><span class="main-menu__text">Подбор программы</span></a></li>
         </ul>
       </nav>
     </header>
