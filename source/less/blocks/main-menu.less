@@ -1,3 +1,5 @@
+@color-item-separator: red;
+
 .main-menu {
   font-style: normal;
   font-weight: 500;
@@ -5,9 +7,9 @@
   font-size: 20px;
   line-height: 20px;
   text-align: center;
-  color: #111111;
+  color: @color-text-main;
 
-  background-color: #ffffff;
+  background-color: @color-bg-main;
 }
 
 .main-menu__list {
@@ -33,7 +35,7 @@
     display: block;
     height: 1px;
     width: 100%;
-    background-color: #e6e6e6;
+    background-color: @color-item-separator;
   }
 }
 
