@@ -59,35 +59,39 @@ $color-item-separator: #e6e6e6 !default;
 
   &:hover {
     color: rgba($color-text-main, 0.6);
-  }
 
-  &:hover .main-menu__logo {
-    opacity: 0.8;
+    .main-menu__logo {
+      opacity: 0.8;
+    }
   }
 
   &:active {
     color: rgba($color-text-main, 0.3);
+
+    .main-menu__logo {
+      opacity: 0.6;
+    }
   }
 
-  &:active .main-menu__logo {
-    opacity: 0.6;
-  }
+  &--active {
+    .main-menu__text {
+      &::after {
+        position: absolute;
+        top: 100%;
+        left: 0;
 
-  &--active .main-menu__text::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $color-bg-tertiary;
+      }
+    }
 
-    content: "";
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: $color-bg-tertiary;
-  }
-
-  &--active:hover,
-  &--active:active {
-    color: $color-text-main;
+    &:hover,
+    &:active {
+      color: $color-text-main;
+    }
   }
 }
 
