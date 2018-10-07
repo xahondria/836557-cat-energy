@@ -1,4 +1,6 @@
-@color-item-separator: red;
+$color-bg-main: #ffffff !default;
+$color-text-main: #111111 !default;
+$color-item-separator: #e6e6e6 !default;
 
 .main-menu {
   font-style: normal;
@@ -7,9 +9,9 @@
   font-size: 20px;
   line-height: 20px;
   text-align: center;
-  color: @color-text-main;
+  color: $color-text-main;
 
-  background-color: @color-bg-main;
+  background-color: $color-bg-main;
 }
 
 .main-menu__list {
@@ -35,7 +37,7 @@
     display: block;
     height: 1px;
     width: 100%;
-    background-color: @color-item-separator;
+    background-color: $color-item-separator;
   }
 }
 
