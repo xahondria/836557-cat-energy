@@ -1,10 +1,14 @@
+$color-text-tertiary: #ffffff !default;
+$color-bg-tertiary: #68b738 !default;
+$color-bg-color-darken: #5eaa2f !default;
+
 .button {
   display: inline-block;
   padding: 11px 15px;
 
   width: 280px;
 
-  color: #ffffff;
+  color: $color-text-tertiary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -12,17 +16,17 @@
   text-align: center;
   text-decoration: none;
 
-  background-color: #68b738;
+  background-color: $color-bg-tertiary;
   border: none;
 
   cursor: pointer;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $color-bg-color-darken;
   }
 
   &:active {
-    background-color: #5eaa2f;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-bg-color-darken;
+    color: rgba($color-text-tertiary, 0.3);
   }
 }

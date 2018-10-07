@@ -1,11 +1,14 @@
-.courses {
-}
+$color-text-main: #111111 !default;
+$color-text-secondary: #444444 !default;
+
+$color-bg-secondary: #f2f2f2 !default;
+$color-bg-tertiary: #68b738 !default;
 
 .courses__item {
   margin: 20px;
   padding: 26px 20px 20px;
 
-  background-color: #f2f2f2;
+  background-color: $color-bg-secondary;
 }
 
 .courses__title-wrapper {
@@ -20,7 +23,7 @@
   font-weight: 400;
   line-height: 37px;
   text-align: left;
-  color: #111111;
+  color: $color-text-main;
 
   text-transform: uppercase;
 }
@@ -33,7 +36,7 @@
   width: 50px;
   height: 50px;
 
-  background-color: #68b738;
+  background-color: $color-bg-tertiary;
   border-radius: 50%;
 
   &::before {
@@ -50,7 +53,7 @@
   }
 
   &--slim::before {
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   &--pro::before {
@@ -58,7 +61,7 @@
     width: 67px;
     height: 54px;
 
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -71,7 +74,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: #444444;
+  color: $color-text-secondary;
 
   &::after {
     position: absolute;
@@ -82,7 +85,7 @@
     display: block;
     height: 1px;
     width: 100%;
-    background-color: rgba(68, 68, 68, 0.1);
+    background-color: rgba(black, 0.1);
   }
 }
 
@@ -96,7 +99,7 @@
   text-transform: uppercase;
   vertical-align: middle;
   text-decoration: none;
-  color: #111111;
+  color: $color-text-main;
 
   cursor: pointer;
 
@@ -107,7 +110,7 @@
     width: 25px;
     height: 13px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

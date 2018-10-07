@@ -1,3 +1,6 @@
+$color-bg-banner: #64a83b !default;
+$color-text-tertiary: #ffffff !default;
+
 .banner {
   text-align: center;
 }
@@ -6,12 +9,12 @@
   min-height: 305px;
   padding-top: 27px;
 
-  background-color: #63a73a;
+  background-color: $color-bg-banner;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
-  color: #ffffff;
+  color: $color-text-tertiary;
 }
 
 .banner__title {
@@ -45,6 +48,4 @@
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-
-  color: #ffffff;
 }

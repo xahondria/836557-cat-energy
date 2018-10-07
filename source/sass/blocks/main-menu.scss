@@ -1,5 +1,8 @@
-$color-bg-main: #ffffff !default;
 $color-text-main: #111111 !default;
+
+$color-bg-main: #ffffff !default;
+$color-bg-tertiary: #68b738 !default;
+
 $color-item-separator: #e6e6e6 !default;
 
 .main-menu {
@@ -48,14 +51,14 @@ $color-item-separator: #e6e6e6 !default;
 
   vertical-align: middle;
   text-decoration: none;
-  color: #111111;
+  color: $color-text-main;
 
-  background-color: #ffffff;
+  background-color: $color-bg-main;
 
   cursor: pointer;
 
   &:hover {
-    color: rgba(18, 18, 18, 0.6);
+    color: rgba($color-text-main, 0.6);
   }
 
   &:hover .main-menu__logo {
@@ -63,7 +66,7 @@ $color-item-separator: #e6e6e6 !default;
   }
 
   &:active {
-    color: rgba(18, 18, 18, 0.3);
+    color: rgba($color-text-main, 0.3);
   }
 
   &:active .main-menu__logo {
@@ -79,12 +82,12 @@ $color-item-separator: #e6e6e6 !default;
     display: block;
     height: 2px;
     width: 100%;
-    background-color: #68b738;
+    background-color: $color-bg-tertiary;
   }
 
   &--active:hover,
   &--active:active {
-    color: rgba(18, 18, 18, 1);
+    color: $color-text-main;
   }
 }
 
@@ -109,7 +112,7 @@ $color-item-separator: #e6e6e6 !default;
 
   border: none;
 
-  background-image: url("../../img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 18px 18px;
