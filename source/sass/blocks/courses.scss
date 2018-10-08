@@ -6,6 +6,10 @@ $color-text-secondary: #444444 !default;
 $color-bg-secondary: #f2f2f2 !default;
 $color-bg-tertiary: #68b738 !default;
 
+.courses {
+  margin-top: 20px;
+}
+
 .courses__item {
   margin: 0 0 20px 0;
   padding: 26px 20px 20px;
@@ -18,7 +22,7 @@ $color-bg-tertiary: #68b738 !default;
 }
 
 .courses__title-wrapper {
-  @include flexbox;
+  display: flex;
 
   margin-left: 2px;
 }
