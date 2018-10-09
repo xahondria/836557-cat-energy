@@ -3,6 +3,8 @@ $color-text-secondary: #444444 !default;
 
 $color-bg-secondary: #f2f2f2 !default;
 
+$color-border-main: #cdcdcd !default;
+
 .efficiency__wrapper {
   display: flex;
   justify-content: center;
@@ -18,7 +20,7 @@ $color-bg-secondary: #f2f2f2 !default;
   padding: 13px 5px 17px;
   width: 124px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-border-main;
   border-radius: 3px;
 
   &:not(:last-child) {

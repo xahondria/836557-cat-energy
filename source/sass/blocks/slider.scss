@@ -1,4 +1,20 @@
+$color-bg-tertiary: #68b738 !default;
+
+$color-border-main: #cdcdcd !default;
+
+$color-text-main: #111111 !default;
+
 .slider {
+  padding-bottom: 36px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-text-main;
+  text-transform: uppercase;
+}
+
+.slider__image{
   margin-top: 42px;
 
   width: 100%;
@@ -7,13 +23,71 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px;
+
+  &--before {
+    background-image: url("../img/before-mobile@1x.png");
+  }
+
+  &--after {
+    background-image: url("../img/after-mobile@1x.png");
+  }
 }
 
-.slider--before {
-  background-image: url("../img/before-mobile@1x.png");
+.slider__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 39px;
+  padding-left: 5px;
 }
 
-.slider--after {
-  background-image: url("../img/after-mobile@1x.png");
+.slider__input {
+  display: none;
 }
 
+.slider__button {
+  position: relative;
+
+  display: inline-block;
+
+  margin: 0 18px;
+
+  width: 84px;
+  height: 14px;
+
+  border: 1px solid $color-border-main;
+  border-radius: 5px;
+
+  background-color: $color-bg-main;
+
+  &::before,
+  &::after {
+    content: "";
+
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+
+    background-color: $color-bg-tertiary;
+  }
+
+  &::before {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 5px;
+
+    transform: translateY(50%);
+  }
+
+  &::after {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    right: 5px;
+    transform: translateY(50%);
+  }
+}
