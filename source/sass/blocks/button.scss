@@ -3,10 +3,8 @@ $color-bg-tertiary: #68b738 !default;
 $color-bg-color-darken: #5eaa2f !default;
 
 .button {
-  display: inline-block;
+  display: block;
   padding: 11px 15px;
-
-  width: 280px;
 
   color: $color-text-tertiary;
   font-size: 14px;

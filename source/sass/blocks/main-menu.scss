@@ -17,6 +17,10 @@ $color-item-separator: #e6e6e6 !default;
   background-color: $color-bg-main;
 }
 
+.main-menu__list {
+  @include list-reset;
+}
+
 .main-menu__item {
   position: relative;
 

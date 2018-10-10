@@ -22,6 +22,8 @@ $color-bg-tertiary: #68b738 !default;
 }
 
 .how-it-works__list {
+  @include list-reset;
+
   font-family: $font-content;
   font-size: 14px;
   font-weight: 400;

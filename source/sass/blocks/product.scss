@@ -1,0 +1,51 @@
+$color-text-main: #111111 !default;
+$color-text-secondary: #444444 !default;
+
+$font-content: "Arial", sans-serif !default;
+
+.catalog__image {
+  width: 50%;
+}
+
+.product__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  width: 50%;
+}
+
+.product__name {
+  @include block-reset;
+
+  padding-right: 30%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-text-main;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.product__description {
+  font-family: $font-content;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-text-secondary;
+  vertical-align: middle;
+}
+
+.product__property-name {
+  text-align: left;
+}
+
+.product__property-value {
+  text-align: right;
+}
+
+.product__button {
+  width: 100%;
+}
