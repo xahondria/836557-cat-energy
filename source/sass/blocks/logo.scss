@@ -1,6 +1,30 @@
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   padding-top: 40px;
+
+}
+
+.logo__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--active {
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
 }
