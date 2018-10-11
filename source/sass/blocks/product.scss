@@ -16,12 +16,6 @@ $font-content: "Arial", sans-serif !default;
   width: 50%;
 
   border-collapse: collapse;
-
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  color: $color-text-secondary;
-  vertical-align: middle;
 }
 
 .product__name {
@@ -35,10 +29,30 @@ $font-content: "Arial", sans-serif !default;
   vertical-align: top;
   text-align: left;
   text-transform: uppercase;
+
+  &--expand {
+    @include block-reset;
+
+    text-align: center;
+  }
 }
 
 .product__property {
+
   font-family: $font-content;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-text-secondary;
+  vertical-align: middle;
+
+  &--expand {
+    @include block-reset;
+
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 21px;
+  }
 }
 
 .product__property-name {
@@ -61,3 +75,18 @@ $font-content: "Arial", sans-serif !default;
   font-size: 16px;
   line-height: 20px;
 }
+
+.product__expand {
+  height: 30px;
+
+  margin-top: 26px;
+  margin-bottom: 24px;
+
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.2;
+}
+

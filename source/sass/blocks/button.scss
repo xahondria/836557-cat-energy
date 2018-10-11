@@ -1,6 +1,10 @@
 $color-text-tertiary: #ffffff !default;
+$color-text-secondary: #444444 !default;
+
+$color-bg-secondary: #f2f2f2 !default;
+$color-bg-secondary-darken: #ebebeb !default;
 $color-bg-tertiary: #68b738 !default;
-$color-bg-color-darken: #5eaa2f !default;
+$color-bg-tertiary-darken: #5eaa2f !default;
 
 .button {
   display: block;
@@ -20,11 +24,25 @@ $color-bg-color-darken: #5eaa2f !default;
   cursor: pointer;
 
   &:hover {
-    background-color: $color-bg-color-darken;
+    background-color: $color-bg-tertiary-darken;
   }
 
   &:active {
-    background-color: $color-bg-color-darken;
+    background-color: $color-bg-tertiary-darken;
     color: rgba($color-text-tertiary, 0.3);
+  }
+
+  &--secondary {
+    color: $color-text-secondary;
+    background-color: $color-bg-secondary;
+
+    &:hover {
+      background-color: $color-bg-secondary-darken;
+    }
+
+    &:active {
+      background-color: $color-bg-secondary-darken;
+      color: rgba($color-text-secondary, 0.3);
+    }
   }
 }

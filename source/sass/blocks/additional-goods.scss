@@ -1,0 +1,40 @@
+$color-bg-tertiary: #68b738 !default;
+
+$color-border-main: #cdcdcd !default;
+
+$color-text-main: #111111 !default;
+
+.additional-goods__title {
+  @include block-reset
+
+  position: relative;
+
+  margin-top: 28px;
+  padding-bottom: 34px;
+
+  border-bottom: 1px solid $color-border-main;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-text-main;
+  vertical-align: middle;
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -20px;
+
+    display: block;
+    width: 53px;
+    height: 3px;
+
+    background-color: $color-bg-tertiary;
+  }
+}
+
+.additional-goods__item {
+  margin-top: 13px;
+}
