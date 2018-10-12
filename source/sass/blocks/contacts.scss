@@ -1,3 +1,5 @@
+$color-bg-secondary: #f2f2f2 !default;
+
 $color-text-main: #111111 !default;
 $color-text-secondary: #444444 !default;
 
@@ -7,6 +9,10 @@ $color-text-secondary: #444444 !default;
 
   padding-top: 12px;
   padding-bottom: 10px;
+
+  &--secondary {
+    background-color: $color-bg-secondary;
+  }
 }
 
 .contacts__text-call {
