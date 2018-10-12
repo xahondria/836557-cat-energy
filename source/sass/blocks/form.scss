@@ -1,0 +1,42 @@
+$color-text-secondary: #444444 !default;
+$color-text-quaternary: #222222 !default;
+
+$color-border-main: #cdcdcd !default;
+
+.form__user-data {
+  @include block-reset;
+
+  margin-top: 39px;
+
+  border: none;
+}
+
+.form__label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $color-text-quaternary;
+
+  text-transform: uppercase;
+}
+
+.form__input {
+  flex-grow: 1;
+  margin: 0 0 0 13px;
+  padding: 12px 15px 13px;
+  border: 1px solid rgba($color-border-main, 0.5);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $color-text-secondary;
+
+  text-transform: uppercase;
+
+}

@@ -28,34 +28,38 @@
     </nav>
   </header>
   <main class="main">
-    <section class="courses-form">
+    <section class="courses-form block-wrapper">
       <h2 class="courses-form__title">Подбор программы</h2>
       <p class="courses-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          Имя:*
-          <input type="text" value="Барсик" name="cats-name" required>
-        </label>
-        <label>
-          Вес (кг):*
-          <input type="text" value="7" name="cats-weight" required>
-        </label>
-        <label>
-          Возраст (лет):
-          <input type="text" value="7" name="cats-age">
-        </label>
-        <label>
-          <input type="radio" name="course" checked>
-          Похудение
-        </label>
-        <label>
-          <input type="radio" name="course">
-          Набор массы
-        </label>
-        <label>
-          <input type="radio" name="course">
-          Не знаю (Нужен ваш совет)
-        </label>
+        <fieldset class="form__user-data">
+          <label class="form__label">
+            Имя:*
+            <input class="form__input" type="text" value="Барсик" name="cats-name" required>
+          </label>
+          <label class="form__label">
+            Вес (кг):*
+            <input type="text" value="7" name="cats-weight" required>
+          </label>
+          <label class="form__label">
+            Возраст (лет):
+            <input type="text" value="7" name="cats-age">
+          </label>
+        </fieldset>
+        <fieldset class="form__user-goal">
+          <label class="form__label">
+            <input type="radio" name="course" checked>
+            Похудение
+          </label>
+          <label class="form__label">
+            <input type="radio" name="course">
+            Набор массы
+          </label>
+          <label class="form__label">
+            <input type="radio" name="course">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </fieldset>
         <fieldset class="form__user-contacts">
           <legend>Контактные данные (владельца кота)</legend>
           <label>
