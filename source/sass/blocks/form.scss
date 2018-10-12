@@ -6,6 +6,8 @@ $color-text-quaternary: #222222 !default;
 
 $color-border-main: #cdcdcd !default;
 
+$margin-section: 20px !default;
+
 .form__user-data {
   @include block-reset;
 
@@ -103,10 +105,41 @@ $color-border-main: #cdcdcd !default;
 }
 
 .form__user-contacts {
+  @include block-reset;
+
+  margin: 28px $margin-section 0;
+
+  border: none;
+}
+
+.form__title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form__title {
+  @include block-reset;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   color: $color-text-main;
+}
 
-  border: none;
+.form__title-line {
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  margin-left: 22px;
+  margin-right: -$margin-section;
+
+  display: block;
+  width: 53px;
+  height: 3px;
+
+  background-color: $color-bg-tertiary;
 }
