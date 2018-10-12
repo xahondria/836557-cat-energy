@@ -5,7 +5,7 @@ $color-border-main: #cdcdcd !default;
 $color-text-main: #111111 !default;
 
 .additional-goods__title {
-  @include block-reset
+  @include block-reset;
 
   position: relative;
 
@@ -37,4 +37,6 @@ $color-text-main: #111111 !default;
 
 .additional-goods__item {
   margin-top: 13px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $color-border-main;
 }
