@@ -1,3 +1,6 @@
+$color-bg-tertiary: #68b738 !default;
+
+$color-text-main: #111111 !default;
 $color-text-secondary: #444444 !default;
 $color-text-quaternary: #222222 !default;
 
@@ -6,12 +9,14 @@ $color-border-main: #cdcdcd !default;
 .form__user-data {
   @include block-reset;
 
-  margin-top: 39px;
+  margin: 39px $margin-section 0;
 
   border: none;
 }
 
 .form__label {
+  position: relative;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -23,11 +28,21 @@ $color-border-main: #cdcdcd !default;
   color: $color-text-quaternary;
 
   text-transform: uppercase;
+
+  &:not(:first-child) {
+    margin-top: 14px;
+  }
+
+  &--goal {
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
 }
 
 .form__input {
   flex-grow: 1;
-  margin: 0 0 0 13px;
+  margin: 0 0 0 14px;
   padding: 12px 15px 13px;
   border: 1px solid rgba($color-border-main, 0.5);
 
@@ -38,5 +53,60 @@ $color-border-main: #cdcdcd !default;
   color: $color-text-secondary;
 
   text-transform: uppercase;
+}
 
+.form__user-goal {
+  margin: 23px 0 0 0;
+  padding: 27px 20px 27px 64px;
+
+  border: 1px solid $color-border-main;
+}
+
+.form__radio {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-border-main;
+    border-radius: 50%;
+  }
+
+  &:checked {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(76%, -50%);
+
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-color: $color-bg-tertiary;
+      border-radius: 50%;
+    }
+  }
+}
+
+.form__user-contacts {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-text-main;
+
+  border: none;
 }

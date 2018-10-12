@@ -1,9 +1,11 @@
 $color-text-main: #111111 !default;
 
+$margin-section: 20px !default;
+
 .courses-form__title {
   @include block-reset;
 
-  margin-top: 16px;
+  margin: 16px $margin-section 0;
 
   font-size: 36px;
   font-weight: 400;
@@ -15,7 +17,7 @@ $color-text-main: #111111 !default;
 .courses-form__text {
   @include block-reset;
 
-  margin-top: 25px;
+  margin: 25px $margin-section 0;
   padding-right: 20px;
 
   font-size: 14px;
