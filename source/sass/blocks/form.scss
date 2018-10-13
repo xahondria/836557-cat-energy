@@ -41,6 +41,24 @@ $margin-section: 20px !default;
     &:not(:first-child) {
       margin-top: 24px;
     }
+
+    &:hover {
+      .form__radio {
+        &::before {
+          border-color: #bababa;
+        }
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      .form__radio {
+        &::before {
+          border-color: #bababa;
+        }
+      }
+    }
   }
 }
 
