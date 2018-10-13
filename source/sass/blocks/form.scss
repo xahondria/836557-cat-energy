@@ -6,6 +6,8 @@ $color-text-quaternary: #222222 !default;
 
 $color-border-main: #cdcdcd !default;
 
+$color-outline-error: #ff8282 !default;
+
 $margin-section: 20px !default;
 
 .form__user-data {
@@ -56,10 +58,25 @@ $margin-section: 20px !default;
 
   text-transform: uppercase;
 
+  &:hover {
+    border: 1px solid $color-border-main;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid $color-text-secondary;
+    outline: 1px solid $color-text-secondary;
+  }
+
+  &--error {
+    border: 1px solid $color-outline-error;
+    outline: 1px solid $color-outline-error;
+  }
+
   &--email {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: 93% center;
+    background-position: right 15px center;
     background-size: 17px 13px;
 
     margin-left: 11px;
@@ -69,7 +86,7 @@ $margin-section: 20px !default;
   &--tel {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 93% center;
+    background-position: right 12px center;
     background-size: 20px 20px;
 
     margin-left: 9px;
