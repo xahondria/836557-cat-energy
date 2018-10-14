@@ -31,7 +31,7 @@
     <section class="courses-form">
       <h2 class="courses-form__title">Подбор программы</h2>
       <p class="courses-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form block-wrapper" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__user-data">
           <label class="form__label">
             Имя:*
@@ -47,15 +47,15 @@
           </label>
         </fieldset>
         <fieldset class="form__user-goal">
-          <label class="form__label form__label--goal">
+          <label class="form__label form__label--radio">
             <input class="form__radio" type="radio" name="course" checked>
             Похудение
           </label>
-          <label class="form__label form__label--goal">
+          <label class="form__label form__label--radio">
             <input class="form__radio" type="radio" name="course">
             Набор массы
           </label>
-          <label class="form__label form__label--goal">
+          <label class="form__label form__label--radio">
             <input class="form__radio" type="radio" name="course">
             Не знаю (Нужен ваш совет)
           </label>
@@ -75,35 +75,41 @@
           </label>
         </fieldset>
         <fieldset class="form__comments">
-          <h3>Комментарий</h3>
-          <textarea name="comments">
-            Расскажите обо всех повадках кота
-          </textarea>
+          <div class="form__title-wrapper">
+            <h3 class="form__title">Комментарий</h3>
+            <div class="form__title-line"></div>
+          </div>
+          <textarea class="form__input form__textarea" name="comments">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="form__other">
-          <h3>Дополнительно</h3>
-          <label>
-            <input type="checkbox" name="sugar-substitute" checked>
-            Сахарозаменитель
-          </label>
-          <label>
-            <input type="checkbox" name="water">
-            Питьевая вода
-          </label>
-          <label>
-            <input type="checkbox" name="milk">
-            Молоко
-          </label>
-          <label>
-            <input type="checkbox" name="vitamin">
-            Витамины
-          </label>
+          <div class="form__title-wrapper form__title-wrapper--other">
+            <h3 class="form__title">Дополнительно</h3>
+            <div class="form__title-line"></div>
+          </div>
+          <div class="form__checkbox-wrapper">
+            <label class="form__label form__label--radio">
+              <input class="form__checkbox" type="checkbox" name="sugar-substitute" checked>
+              Сахарозаменитель
+            </label>
+            <label class="form__label form__label--radio">
+              <input class="form__checkbox" type="checkbox" name="water">
+              Питьевая вода
+            </label>
+            <label class="form__label form__label--radio">
+              <input class="form__checkbox" type="checkbox" name="milk">
+              Молоко
+            </label>
+            <label class="form__label form__label--radio">
+              <input class="form__checkbox" type="checkbox" name="vitamin">
+              Витамины
+            </label>
+          </div>
         </fieldset>
-        <button class="button" type="submit">Отправить заявку</button>
+        <button class="form-button button" type="submit">Отправить заявку</button>
         <p class="form__text">* — Обязательные поля</p>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts--secondary block-wrapper">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__text-call">приглашаем <br> к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
