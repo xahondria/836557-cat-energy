@@ -1,7 +1,10 @@
 $width-tablet: 768px !default;
 $width-desktop: 1440px !default;
 
+$margin-section-tablet: 30px !default;
+
 $color-text-main: #111111 !default;
+$color-text-quaternary: #222222 !default;
 
 $color-bg-main: #ffffff !default;
 $color-bg-tertiary: #68b738 !default;
@@ -57,6 +60,11 @@ $color-item-separator: #e6e6e6 !default;
 
   cursor: pointer;
 
+  &--logo {
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+
   &:hover {
     color: rgba($color-text-main, 0.6);
 
@@ -77,7 +85,7 @@ $color-item-separator: #e6e6e6 !default;
     .main-menu__text {
       &::after {
         position: absolute;
-        top: 100%;
+        bottom: -4px;
         left: 0;
 
         content: "";
@@ -125,19 +133,31 @@ $color-item-separator: #e6e6e6 !default;
   cursor: pointer;
 }
 
-@media(min-width: $width-tablet) {
+@media (min-width: $width-tablet) {
   .main-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    margin-left: $margin-section-tablet;
+    margin-right: $margin-section-tablet;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: right;
   }
 
   .main-menu__list {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .main-menu__item {
+    margin-bottom: 0;
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 36px;
     }
 
     &::after {
@@ -145,8 +165,33 @@ $color-item-separator: #e6e6e6 !default;
     }
   }
 
+  .main-menu__link {
+    padding-top: 42px;
+    padding-bottom: 42px;
+
+    color: $color-text-quaternary;
+
+    &--logo {
+      padding-top: 23px;
+      padding-bottom: 22px;
+    }
+
+    &--active {
+      .main-menu__text {
+        &::after {
+          bottom: -9px;
+        }
+      }
+    }
+  }
+
   .main-menu__logo {
     @include block-reset
+  }
+
+  .main-menu__image {
+    width: 173px;
+    height: 59px;
   }
 
   .main-menu__hamburger {
