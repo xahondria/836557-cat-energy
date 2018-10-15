@@ -1,0 +1,30 @@
+$color-text-main: #111111 !default;
+
+$margin-section: 20px !default;
+
+.courses-form__title {
+  @include block-reset;
+
+  margin: 16px $margin-section 0;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: $color-text-main;
+}
+
+.courses-form__text {
+  @include block-reset;
+
+  margin: 25px $margin-section 0;
+  padding-right: 20px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $color-text-main;
+
+  text-transform: uppercase;
+}

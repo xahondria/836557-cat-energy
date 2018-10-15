@@ -1,0 +1,43 @@
+$color-bg-main: #ffffff !default;
+
+$color-bg-tertiary: #68b738 !default;
+
+$font-content: "Arial", sans-serif !default;
+
+.promo__text {
+  position: relative;
+
+  margin: 39px 0 35px;
+  padding: 187px 45px 42px;
+
+  background-color: $color-bg-tertiary;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: $font-content;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-bg-main;
+  text-align: center;
+  vertical-align: middle;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-size: 55px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

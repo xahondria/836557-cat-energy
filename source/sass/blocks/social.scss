@@ -1,0 +1,45 @@
+$color-icon-social: #666666 !default;
+$color-bg-tertiary: #68b738 !default;
+
+$margin-section: 20px !default;
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 29px;
+  margin-right: $margin-section;
+  margin-left: $margin-section;
+
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid rgba(black, 0.1);
+  border-bottom: 1px solid rgba(black, 0.1);
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  &:not(:first-child) {
+    margin-left: 25px;
+  }
+}
+
+.social__icon {
+  fill: $color-icon-social;
+
+  &:hover {
+    fill: $color-bg-tertiary;
+  }
+
+  &:active {
+    fill: rgba($color-bg-tertiary, 0.3);
+  }
+}

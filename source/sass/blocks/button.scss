@@ -1,0 +1,48 @@
+$color-text-tertiary: #ffffff !default;
+$color-text-secondary: #444444 !default;
+
+$color-bg-secondary: #f2f2f2 !default;
+$color-bg-secondary-darken: #ebebeb !default;
+$color-bg-tertiary: #68b738 !default;
+$color-bg-tertiary-darken: #5eaa2f !default;
+
+.button {
+  display: block;
+  padding: 11px 15px;
+
+  color: $color-text-tertiary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: $color-bg-tertiary;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-bg-tertiary-darken;
+  }
+
+  &:active {
+    background-color: $color-bg-tertiary-darken;
+    color: rgba($color-text-tertiary, 0.3);
+  }
+
+  &--secondary {
+    color: $color-text-secondary;
+    background-color: $color-bg-secondary;
+
+    &:hover {
+      background-color: $color-bg-secondary-darken;
+    }
+
+    &:active {
+      background-color: $color-bg-secondary-darken;
+      color: rgba($color-text-secondary, 0.3);
+    }
+  }
+}
