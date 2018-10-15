@@ -42,7 +42,10 @@ $color-bg-tertiary: #68b738 !default;
 }
 
 .courses__image {
+  float: left;
+
   margin-right: 19px;
+  margin-left: 2px;
 
   width: 50px;
   height: 50px;
@@ -82,8 +85,8 @@ $color-bg-tertiary: #68b738 !default;
 
 .courses__text {
   position: relative;
-  margin: 0;
-  padding: 22px 0;
+  margin: 29px 0 0;
+  padding: 0 0 22px;
 
   font-family: $font-content;
   font-size: 14px;
@@ -134,4 +137,103 @@ $color-bg-tertiary: #68b738 !default;
   &:active {
     opacity: 0.3;
   }
+}
+
+@media (min-width: $width-tablet) {
+  .courses {
+    margin-top: 0;
+  }
+
+  .courses__item {
+    margin: 0 0 30px 0;
+    padding: 76px 275px 62px 52px;
+
+    min-width: 310px;
+
+    &--pro {
+      padding-right: 315px;
+    }
+  }
+
+  .courses__title {
+    margin: 0;
+
+    font-size: 36px;
+  }
+
+  .courses__image {
+    float: right;
+    margin-right: 0;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: $color-bg-tertiary;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      display: block;
+
+      margin-top: -12px;
+      width: 199px;
+      height: 194px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &--slim {
+      &::before {
+        background-image: url("../img/icon-cat-slim.svg");
+      }
+    }
+
+    &--pro {
+      &::before {
+        margin-left: -9px;
+        width: 67px;
+        height: 54px;
+
+        background-image: url("../img/icon-cat-pro.svg");
+      }
+    }
+  }
+
+  .courses__text {
+    margin-top: 25px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text-secondary;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .courses__link {
+    margin-top: 56px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      margin-left: 23px;
+      width: 25px;
+      height: 18px;
+
+      background-image: url("../../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
 }
