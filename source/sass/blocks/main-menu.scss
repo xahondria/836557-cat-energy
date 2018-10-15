@@ -156,6 +156,7 @@ $color-item-separator: #e6e6e6 !default;
 
   .main-menu__item {
     margin-bottom: 0;
+
     &:not(:last-child) {
       margin-right: 36px;
     }
@@ -174,6 +175,20 @@ $color-item-separator: #e6e6e6 !default;
     &--logo {
       padding-top: 23px;
       padding-bottom: 22px;
+
+      cursor: default;
+
+      &:hover {
+        .main-menu__logo {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        .main-menu__logo {
+          opacity: 1;
+        }
+      }
     }
 
     &--active {
@@ -186,7 +201,7 @@ $color-item-separator: #e6e6e6 !default;
   }
 
   .main-menu__logo {
-    @include block-reset
+    @include block-reset;
   }
 
   .main-menu__image {
