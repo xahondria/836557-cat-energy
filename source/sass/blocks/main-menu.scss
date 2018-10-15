@@ -1,3 +1,6 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
 $color-text-main: #111111 !default;
 
 $color-bg-main: #ffffff !default;
@@ -120,4 +123,33 @@ $color-item-separator: #e6e6e6 !default;
   background-position: center;
 
   cursor: pointer;
+}
+
+@media(min-width: $width-tablet) {
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-menu__list {
+    display: flex;
+  }
+
+  .main-menu__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .main-menu__logo {
+    @include block-reset
+  }
+
+  .main-menu__hamburger {
+    display: none;
+  }
 }
