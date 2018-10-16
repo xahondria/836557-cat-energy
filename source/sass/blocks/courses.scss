@@ -42,6 +42,8 @@ $color-bg-tertiary: #68b738 !default;
 }
 
 .courses__image {
+  position: relative;
+
   float: left;
 
   margin-right: 19px;
@@ -146,13 +148,9 @@ $color-bg-tertiary: #68b738 !default;
 
   .courses__item {
     margin: 0 0 30px 0;
-    padding: 76px 275px 62px 52px;
+    padding: 76px 62px 62px 52px;
 
     min-width: 310px;
-
-    &--pro {
-      padding-right: 315px;
-    }
   }
 
   .courses__title {
@@ -163,40 +161,41 @@ $color-bg-tertiary: #68b738 !default;
 
   .courses__image {
     float: right;
-    margin-right: 0;
+    margin: 0;
 
     width: 200px;
     height: 200px;
 
-    background-color: $color-bg-tertiary;
-    border-radius: 50%;
-
     &::before {
-      content: "";
-      display: block;
-
-      margin-top: -12px;
-      width: 199px;
-      height: 194px;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+      margin: 0;
+      width: 200px;
+      height: 200px;
     }
 
     &--slim {
+      margin-top: 16px;
+      margin-left: 10px;
+
       &::before {
-        background-image: url("../img/icon-cat-slim.svg");
+        margin-top: -12px;
+        width: 199px;
+        height: 193px;
       }
     }
 
     &--pro {
-      &::before {
-        margin-left: -9px;
-        width: 67px;
-        height: 54px;
+      margin-top: 16px;
+      margin-right: -2px;
+      margin-left: 55px;
 
-        background-image: url("../img/icon-cat-pro.svg");
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-51%, -50%);
+
+        width: 270px;
+        height: 200px;
       }
     }
   }
@@ -224,16 +223,6 @@ $color-bg-tertiary: #68b738 !default;
       margin-left: 23px;
       width: 25px;
       height: 18px;
-
-      background-image: url("../../img/icon-right-arrow-long.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
-
 }
