@@ -1,3 +1,6 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
 $color-text-main: #111111 !default;
 $color-text-secondary: #444444 !default;
 
@@ -74,4 +77,55 @@ $color-border-main: #cdcdcd !default;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+}
+
+@media (min-width: $width-tablet) {
+  .efficiency {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .efficiency__wrapper {
+    margin-top: 53px;
+  }
+
+  .efficiency__item {
+    padding: 15px 5px 18px;
+    width: 162px;
+
+    border: 1px solid $color-border-main;
+    border-radius: 3px;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+
+  .efficiency__item-name {
+    transform: translate(-50%, -50%);
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $color-bg-main;
+  }
+
+  .efficiency__item-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .efficiency__cost {
+    @include block-reset;
+
+    margin-top: 34px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $color-text-main;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
 }

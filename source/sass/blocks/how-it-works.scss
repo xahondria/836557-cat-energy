@@ -170,7 +170,7 @@ $color-bg-tertiary: #68b738 !default;
     }
 
     &--dining {
-      ::after {
+      &::after {
         content: "3";
         left: 114px;
         top: -37px;
