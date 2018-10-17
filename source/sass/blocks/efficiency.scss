@@ -83,10 +83,12 @@ $color-border-main: #cdcdcd !default;
   .efficiency {
     display: flex;
     justify-content: space-between;
+
+    margin-top: 53px;
   }
 
   .efficiency__wrapper {
-    margin-top: 53px;
+    margin-top: 0;
   }
 
   .efficiency__item {
@@ -116,16 +118,20 @@ $color-border-main: #cdcdcd !default;
   }
 
   .efficiency__cost {
-    @include block-reset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    margin-top: 34px;
+    margin-top: 0;
 
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 20px;
     line-height: 20px;
-    color: $color-text-main;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .efficiency__cost-text {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
