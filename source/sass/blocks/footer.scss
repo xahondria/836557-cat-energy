@@ -1,5 +1,19 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
+$margin-section-tablet: 30px !default;
+
 $color-bg-secondary: #f2f2f2 !default;
 
 .footer {
   background-color: $color-bg-secondary;
+}
+
+@media (min-width: $width-tablet) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 59px $margin-section-tablet 50px;
+  }
 }

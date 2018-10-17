@@ -43,3 +43,37 @@ $margin-section: 20px !default;
     fill: rgba($color-bg-tertiary, 0.3);
   }
 }
+
+@media (min-width: $width-tablet) {
+  .social {
+    margin: 0;
+    padding: 0;
+
+    width: 30%;
+
+    border: none;
+  }
+
+  .social__item {
+
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+  }
+
+  .social__icon--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__icon--in {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+}

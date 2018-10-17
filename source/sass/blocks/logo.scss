@@ -1,3 +1,6 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
 .logo {
   display: flex;
   justify-content: center;
@@ -25,5 +28,14 @@
     &:active {
       opacity: 1;
     }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .logo {
+    display: block;
+    padding-top: 0;
+
+    width: 30%;
   }
 }
