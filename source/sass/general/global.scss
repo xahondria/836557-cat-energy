@@ -1,4 +1,5 @@
 $width-mobile: 320px !default;
+$width-desktop: 1440px !default;
 
 @font-face {
   font-family: "Oswald";
@@ -32,4 +33,8 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
 
   min-width: $width-mobile;
+  max-width: $width-desktop;
+
+  margin-right: auto;
+  margin-left: auto;
 }

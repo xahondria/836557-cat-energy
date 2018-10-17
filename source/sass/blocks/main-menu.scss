@@ -4,6 +4,7 @@ $width-desktop: 1440px !default;
 $margin-section-tablet: 30px !default;
 
 $color-text-main: #111111 !default;
+$color-text-tertiary: #ffffff !default;
 $color-text-quaternary: #222222 !default;
 
 $color-bg-main: #ffffff !default;
@@ -211,5 +212,30 @@ $color-item-separator: #e6e6e6 !default;
 
   .main-menu__hamburger {
     display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-menu__list {
+    background-color: $color-bg-tertiary;
+  }
+
+  .main-menu__item {
+  }
+
+  .main-menu__link {
+    &--list {
+      color: $color-text-tertiary;
+      background-color: $color-bg-tertiary;
+    }
+
+    &--active {
+      .main-menu__text {
+        &::after {
+          bottom: -9px;
+          background-color: $color-bg-main;
+        }
+      }
+    }
   }
 }
