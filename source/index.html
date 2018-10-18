@@ -92,14 +92,21 @@
         </div>
         <div class="slider">
           <div class="slider__wrapper">
-            <div class="slider__image slider__image--before"></div>
-            <div class="slider__image slider__image--after"></div>
+            <div class="slider__image slider__image--after">
+              <div class="slider__image slider__image--before"></div>
+              <div class="slider__bg slider__bg--before"></div>
+              <div class="slider__bg slider__bg--after"></div>
+            </div>
           </div>
           <label class="slider__label">
-            Было
-            <input class="slider__input" type="checkbox">
-            <span class="slider__button"></span>
-            Стало
+            <span class="slider__text">Было</span>
+            <input class="slider__input slider__input--checkbox" type="checkbox">
+            <input class="slider__input slider__input--range" type="range">
+            <div class="slider__button"></div>
+            <div class="slider__range">
+              <div class="slider__thumb"></div>
+            </div>
+            <span class="slider__text">Стало</span>
           </label>
         </div>
       </section>
