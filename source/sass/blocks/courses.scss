@@ -233,8 +233,9 @@ $color-bg-tertiary: #68b738 !default;
 @media (min-width: $width-desktop) {
   .courses {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     margin-top: 51px;
   }
@@ -245,6 +246,10 @@ $color-bg-tertiary: #68b738 !default;
     padding: 76px 50px 62px 52px;
 
     width: 570px;
+
+    &:nth-of-type(2n) {
+      margin-left: 80px;
+    }
   }
 
   .courses__title {

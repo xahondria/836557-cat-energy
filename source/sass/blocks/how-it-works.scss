@@ -200,3 +200,67 @@ $color-bg-tertiary: #68b738 !default;
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .how-it-works__title {
+    margin: 73px 0 72px;
+  }
+
+  .how-it-works__list {
+    justify-content: flex-start;
+  }
+
+  .how-it-works__item {
+    width: 245px;
+    min-height: 281px;
+
+    margin-bottom: 36px;
+    padding: 0;
+
+    &:nth-child(2n) {
+      padding-left: 0;
+    }
+
+    &:not(:nth-child(4n - 3)) {
+      margin-left: 80px;
+    }
+
+    &--leaf {
+      &::after {
+        content: "1";
+        left: 118px;
+        top: -39px;
+      }
+    }
+
+    &--powder {
+      &::after {
+        content: "2";
+        left: 111px;
+        top: -39px;
+      }
+    }
+
+    &--dining {
+      &::after {
+        content: "3";
+        left: 114px;
+        top: -37px;
+      }
+    }
+
+    &--clock {
+      padding-right: 0;
+
+      &::after {
+        content: "4";
+        left: 114px;
+        top: -39px;
+      }
+    }
+
+    & br {
+      display: block;
+    }
+  }
+}
