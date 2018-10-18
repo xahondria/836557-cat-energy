@@ -1,3 +1,6 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
 $font-content: "Arial", sans-serif !default;
 
 $color-text-main: #111111 !default;
@@ -224,5 +227,11 @@ $color-bg-tertiary: #68b738 !default;
       width: 25px;
       height: 18px;
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .courses {
+    margin-top: 80px;
   }
 }
