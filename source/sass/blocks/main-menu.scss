@@ -2,6 +2,7 @@ $width-tablet: 768px !default;
 $width-desktop: 1440px !default;
 
 $margin-section-tablet: 30px !default;
+$margin-section-desktop: 110px !default;
 
 $color-text-main: #111111 !default;
 $color-text-tertiary: #ffffff !default;
@@ -207,7 +208,7 @@ $color-item-separator: #e6e6e6 !default;
 
   .main-menu__image {
     width: 173px;
-    height: 59px;
+    height: auto;
   }
 
   .main-menu__hamburger {
@@ -216,17 +217,53 @@ $color-item-separator: #e6e6e6 !default;
 }
 
 @media (min-width: $width-desktop) {
+  .main-menu {
+    margin-top: 30px;
+    margin-right: $margin-section-desktop;
+    margin-left: $margin-section-desktop;
+
+    background-color: transparent;
+  }
+
+  .main-menu__image {
+    width: 202px;
+    height: auto;
+  }
+
   .main-menu__list {
-    background-color: $color-bg-tertiary;
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      width: 50%;
+      height: 696px;
+
+      background-color: $color-bg-banner;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 
   .main-menu__item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 
   .main-menu__link {
     &--list {
+      font-size: 20px;
+      line-height: 25px;
+
       color: $color-text-tertiary;
-      background-color: $color-bg-tertiary;
+      background-color: transparent;
     }
 
     &--active {

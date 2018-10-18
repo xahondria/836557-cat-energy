@@ -124,3 +124,53 @@ $margin-section: 20px !default;
     line-height: 20px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .banner {
+    margin-top: 82px;
+    padding: 0 191px;
+
+    min-height: 474px;
+  }
+
+  .banner__background {
+    padding: 0;
+
+    width: 50%;
+  }
+
+  .banner__title {
+    margin: 0;
+  }
+
+  .banner__text {
+    margin: 41px 0 0;
+  }
+
+  .banner__image {
+    position: absolute;
+    top: -135px;
+    left: 560px;
+
+    z-index: 10;
+
+    margin-top: 0;
+
+    width: 552px;
+    height: 499px;
+
+
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-size: contain;
+  }
+
+  .banner__button {
+    position: static;
+
+    display: inline-block;
+
+    margin-top: 53px;
+    margin-bottom: 30px;
+    margin-left: -1px;
+  }
+}
