@@ -27,7 +27,11 @@ $margin-section: 20px !default;
   width: 30px;
   height: 30px;
 
-  &:not(:first-child) {
+  &--in {
+    margin-left: 25px;
+  }
+
+  &--fb {
     margin-left: 25px;
   }
 }
@@ -56,8 +60,15 @@ $margin-section: 20px !default;
 
   .social__item {
 
-    &:not(:first-child) {
+
+    &--in {
       margin-left: 25px;
+    }
+
+    &--fb {
+      margin-top: -5px;
+      margin-right: 7px;
+      margin-left: 18px;
     }
   }
 

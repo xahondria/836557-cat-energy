@@ -40,7 +40,8 @@ $color-text-secondary: #444444 !default;
 
 @media (min-width: $width-tablet) {
   .contacts {
-    padding: 101px 71px 40px;
+    margin-top: 79px;
+    padding: 40px 71px 40px;
   }
 
   .contacts__text-call {
