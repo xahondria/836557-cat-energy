@@ -1,4 +1,5 @@
 $width-mobile: 320px !default;
+$width-tablet: 768px !default;
 $width-desktop: 1440px !default;
 
 @font-face {
@@ -37,4 +38,22 @@ body {
 
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: $width-mobile) {
+  body {
+    width: $width-mobile;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  body {
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  body {
+    width: $width-desktop;
+  }
 }

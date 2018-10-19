@@ -8,15 +8,17 @@ $color-text-main: #111111 !default;
 $color-text-secondary: #444444 !default;
 
 .contacts {
-  display: flex;
-  align-items: center;
-
   padding-top: 12px;
   padding-bottom: 10px;
 
   &--secondary {
     background-color: $color-bg-secondary;
   }
+}
+
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .contacts__text-call {
