@@ -344,7 +344,7 @@ $color-text-main: #111111 !default;
       width: 50%;
       height: 100%;
 
-      background-image: url("../../img/before-desktop@1x.png");
+      background-image: url("../img/before-desktop@1x.png");
       background-position: -40px 0;
     }
   }
@@ -373,77 +373,13 @@ $color-text-main: #111111 !default;
       top: 169px;
 
       width: 50%;
-      height: 432px;
+      height: 461px;
 
       background-color: $color-bg-secondary;
     }
   }
 
   .slider__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    z-index: 10;
-
-    margin-top: 20px;
-    padding-left: 0;
-  }
-
-  .slider__button {
-    display: none;
-  }
-
-  .slider__range {
-    display: block;
-
-    margin: 0 22px;
-
-    width: 428px;
-    height: 6px;
-    background-color: #dcdcdc;
-
-    border-radius: 3px;
-
-    cursor: pointer;
-  }
-
-  .slider__thumb {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: block;
-
-    width: 34px;
-    height: 34px;
-
-    border: 1px solid $color-border-main;
-    border-radius: 50%;
-
-    background-color: $color-bg-main;
-
-    box-shadow: 0 2px 5px rgba(#000000, 0.15);
-
-    cursor: pointer;
-
-    &::after {
-      content: "";
-      display: block;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      width: 8px;
-      height: 8px;
-
-      border-radius: 50%;
-
-      background-color: $color-bg-tertiary;
-    }
+    margin-top: 40px;
   }
 }

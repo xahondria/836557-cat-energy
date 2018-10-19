@@ -2,6 +2,7 @@ $width-tablet: 768px !default;
 $width-desktop: 1440px !default;
 
 $margin-section-tablet: 30px !default;
+$margin-section-desktop: 110px !default;
 
 $color-bg-secondary: #f2f2f2 !default;
 
@@ -15,5 +16,11 @@ $color-bg-secondary: #f2f2f2 !default;
     justify-content: space-between;
 
     padding: 59px $margin-section-tablet 50px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .footer {
+    padding: 59px $margin-section-desktop 50px;
   }
 }
