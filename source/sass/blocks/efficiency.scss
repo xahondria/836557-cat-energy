@@ -135,3 +135,33 @@ $color-border-main: #cdcdcd !default;
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .efficiency {
+    display: block;
+
+    margin-top: 68px;
+  }
+
+  .efficiency__wrapper {
+    justify-content: flex-start;
+  }
+
+  .efficiency__item-name {
+    background-color: $color-bg-secondary;
+  }
+
+  .efficiency__cost {
+    margin-top: 60px;
+
+    display: block;
+    text-align: left;
+  }
+
+  .efficiency__cost-text {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+  }
+}
