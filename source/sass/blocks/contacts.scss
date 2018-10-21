@@ -45,6 +45,12 @@ $color-text-secondary: #444444 !default;
   .contacts {
     margin-top: 79px;
     padding: 40px 71px 40px;
+
+
+    &--catalog {
+      margin-top: 76px;
+      padding-top: 45px;
+    }
   }
 
   .contacts__text-call {
