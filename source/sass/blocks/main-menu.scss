@@ -233,21 +233,23 @@ $color-item-separator: #e6e6e6 !default;
   .main-menu__list {
     background-color: transparent;
 
-    &::after {
-      content: "";
-      display: block;
+    &--index {
+      &::after {
+        content: "";
+        display: block;
 
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
 
-      width: 50%;
-      height: 696px;
+        width: 50%;
+        height: 696px;
 
-      background-color: $color-bg-banner;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
+        background-color: $color-bg-banner;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -262,8 +264,27 @@ $color-item-separator: #e6e6e6 !default;
       font-size: 20px;
       line-height: 25px;
 
-      color: $color-text-tertiary;
       background-color: transparent;
+    }
+
+    &--index {
+      color: $color-text-tertiary;
+
+      &:hover {
+        color: rgba($color-text-tertiary, 0.6);
+
+        .main-menu__logo {
+          opacity: 0.8;
+        }
+      }
+
+      &:active {
+        color: rgba($color-text-tertiary, 0.3);
+
+        .main-menu__logo {
+          opacity: 0.6;
+        }
+      }
     }
 
     &--active {
@@ -271,6 +292,11 @@ $color-item-separator: #e6e6e6 !default;
         &::after {
           bottom: -9px;
           background-color: $color-bg-main;
+        }
+
+        &:hover,
+        &:active {
+          color: $color-text-tertiary;
         }
       }
     }
