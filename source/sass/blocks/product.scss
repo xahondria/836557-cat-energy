@@ -223,3 +223,64 @@ $font-content: "Arial", sans-serif !default;
     opacity: 0.2;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .product {
+    margin: 0 40px 63px;
+    padding: 0 38px 39px;
+
+    &--expand {
+      margin-top: 80px;
+    }
+  }
+
+  .product__image {
+    width: 245px;
+  }
+
+  .product__description {
+    margin: 36px 0 0;
+    width: auto;
+  }
+
+  .product__name {
+    padding: 0 10px 19px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product__property {
+    &--expand {
+      padding: 0;
+    }
+  }
+
+  .product__property-name {
+    padding: 8px 0 7px 0;
+  }
+
+  .product__property-value {
+    padding: 8px 0 7px 0;
+  }
+
+  .product__button {
+    margin-top: 33px;
+
+    &--expand {
+      margin-top: 83px;
+    }
+  }
+
+  .product__expand {
+    height: 60px;
+
+    margin-top: 54px;
+    margin-bottom: 49px;
+
+    background-image: url("../img/icon-plus.svg");
+    background-size: 60px;
+
+    opacity: 0.2;
+  }
+}

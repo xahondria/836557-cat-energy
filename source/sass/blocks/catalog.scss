@@ -67,29 +67,19 @@ $color-border-catalog-item: #ededed !default;
 
 @media (min-width: $width-desktop) {
   .catalog {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    margin: 0 ($margin-section-desktop - 40px);
   }
 
   .catalog__title {
-    margin-top: 30px;
+    margin-top: 48px;
     margin-bottom: 84px;
+    margin-left: 40px;
 
-    padding: 0 $margin-section-tablet;
+    padding: 0;
     width: 100%;
-
-    font-size: 60px;
-    text-align: left;
-
-    border-bottom: none;
   }
 
   .catalog__item {
-    display: block;
-
     width: 245px;
-    border-bottom: none;
   }
 }
