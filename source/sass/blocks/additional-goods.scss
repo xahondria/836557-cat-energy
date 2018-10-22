@@ -109,7 +109,7 @@ $margin-section: 20px !default;
 
 @media (min-width: $width-desktop) {
   .additional-goods {
-    margin: 0 $margin-section-desktop;
+    margin: 0 $margin-section-desktop 86px;
   }
 
   .additional-goods__wrapper {
