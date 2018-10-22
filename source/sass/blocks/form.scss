@@ -345,6 +345,20 @@ $font-content: "Arial", sans-serif !default;
         }
       }
     }
+
+    &--checkbox {
+      margin-bottom: 52px;
+
+      width: 220px;
+
+      &:nth-child(2n) {
+        margin-left: 124px;
+      }
+
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
   }
 
   .form__input {
@@ -370,22 +384,20 @@ $font-content: "Arial", sans-serif !default;
     }
 
     &--email {
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: right 15px center;
-      background-size: 17px 13px;
+      background-position: right 18px center;
 
-      margin-left: 11px;
-      padding-right: 10px;
+      margin-left: 18px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
 
     &--tel {
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
-      background-position: right 12px center;
+      background-position: right 15px center;
       background-size: 20px 20px;
 
-      margin-left: 9px;
+      margin-left: 12px;
       padding-right: 10px;
     }
   }
@@ -437,99 +449,79 @@ $font-content: "Arial", sans-serif !default;
   }
 
   .form__user-contacts {
-    @include block-reset;
-
-    margin-top: 28px;
-
-    border: none;
+    margin-top: 75px;
   }
 
   .form__title-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    margin-bottom: 34px;
+    margin-bottom: 76px;
   }
 
   .form__title {
-    @include block-reset;
+    position: relative;
 
-    flex-grow: 0;
-    flex-shrink: 1;
+    margin-left: -3px;
 
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $color-text-main;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 22px;
+      left: -67px;
+
+      width: 28px;
+      height: 3px;
+
+      background-color: $color-bg-tertiary;
+    }
   }
 
   .form__title-line {
-    flex-grow: 1;
-    flex-shrink: 0;
-
-    margin-top: 14px;
-    margin-left: 22px;
-    margin-right: -$margin-section;
-
-    display: block;
-    width: 97px;
-    height: 3px;
-
-    background-color: $color-bg-tertiary;
+    margin-top: 22px;
+    margin-left: 43px;
+    margin-right: -67px;
   }
 
   .form__comments {
-    @include block-reset;
-
-    margin-top: 28px;
-
-    border: none;
+    margin-top: 65px;
   }
 
   .form__textarea {
     margin: 0;
-    padding: 13px 13px;
-
-    width: 100%;
-    min-height: 150px;
-
-    overflow: hidden;
-    resize: none;
+    padding: 14px 16px;
+    min-height: 174px;
   }
 
   .form__other {
-    @include block-reset;
-
-    margin-top: 28px;
-
-    border: none;
+    margin-top: 63px;
   }
 
   .form__checkbox-wrapper {
-    padding: 6px 20px 20px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: 56px;
+    padding: 0;
   }
 
   .form__checkbox {
     position: absolute;
     top: 50%;
-    left: -45px;
+    left: -58px;
 
     cursor: pointer;
     height: 0;
     width: 0;
 
     &::before {
-      position: absolute;
       top: 50%;
       transform: translateY(-50%);
       left: 0;
-
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
-      border: 1px solid $color-border-main;
+      width: 40px;
+      height: 40px;
     }
 
     &:checked {
@@ -543,25 +535,22 @@ $font-content: "Arial", sans-serif !default;
   }
 
   .form-button {
-    margin-top: 21px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
+    display: inline-block;
 
-    font-size: 16px;
-    font-weight: 400;
+    margin-top: 13px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    width: 283px;
+
+    font-size: 20px;
     line-height: 20px;
   }
 
   .form__text {
-    margin-top: 21px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 56px;
 
-    font-family: $font-content;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $color-text-secondary;
-    vertical-align: middle;
-    text-align: center;
+    font-size: 16px;
   }
 }
