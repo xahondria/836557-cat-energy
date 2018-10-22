@@ -254,6 +254,9 @@ $color-item-separator: #e6e6e6 !default;
   }
 
   .main-menu__item {
+    position: relative;
+    z-index: 100;
+
     &:not(:last-child) {
       margin-right: 34px;
     }

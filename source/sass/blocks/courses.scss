@@ -139,8 +139,20 @@ $color-bg-tertiary: #68b738 !default;
     background-size: contain;
   }
 
+  &:hover {
+    &::after {
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
   &:active {
     opacity: 0.3;
+
+    &::after {
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
