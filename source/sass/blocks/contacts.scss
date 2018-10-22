@@ -1,18 +1,24 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
+$color-bg-main: #ffffff !default;
 $color-bg-secondary: #f2f2f2 !default;
 
 $color-text-main: #111111 !default;
 $color-text-secondary: #444444 !default;
 
 .contacts {
-  display: flex;
-  align-items: center;
-
   padding-top: 12px;
   padding-bottom: 10px;
 
   &--secondary {
     background-color: $color-bg-secondary;
   }
+}
+
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .contacts__text-call {
@@ -33,4 +39,80 @@ $color-text-secondary: #444444 !default;
   font-weight: 400;
   line-height: 20px;
   color: $color-text-secondary;
+}
+
+@media (min-width: $width-tablet) {
+  .contacts {
+    margin-top: 79px;
+    padding: 40px 71px 40px;
+
+
+    &--catalog {
+      margin-top: 76px;
+      padding-top: 45px;
+    }
+
+    &--form {
+      margin-top: 72px;
+      padding-top: 45px;
+    }
+  }
+
+  .contacts__text-call {
+    padding-right: 20%;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 20%;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__city {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .contacts {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    top: 134px;
+    left: 110px;
+
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 570px;
+    min-height: 201px;
+    padding: 46px 76px 40px;
+
+    background-color: $color-bg-main;
+  }
+
+  .contacts__text-call {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .contacts__address {
+    width: 50%;
+    padding-left: 41px;
+    text-align: left;
+  }
 }

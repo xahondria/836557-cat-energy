@@ -1,3 +1,9 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+$margin-section-desktop: 110px !default;
+
+$color-bg-main: #ffffff !default;
+$color-bg-secondary: #f2f2f2 !default;
 $color-bg-tertiary: #68b738 !default;
 
 $color-border-main: #cdcdcd !default;
@@ -6,7 +12,9 @@ $color-text-main: #111111 !default;
 
 .slider {
   padding-bottom: 36px;
+}
 
+.slider__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -15,11 +23,12 @@ $color-text-main: #111111 !default;
 }
 
 .slider__image {
-  margin-top: 42px;
+  margin: 34px auto 0;
 
-  width: 100%;
-  height: 225px;
+  width: 320px;
+  height: 240px;
 
+  background-color: $color-bg-secondary;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px;
@@ -33,12 +42,16 @@ $color-text-main: #111111 !default;
   }
 }
 
+.slider__bg {
+  display: none;
+}
+
 .slider__label {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 39px;
+  margin-top: 32px;
   padding-left: 5px;
 }
 
@@ -89,5 +102,284 @@ $color-text-main: #111111 !default;
     top: 0;
     right: 5px;
     transform: translateY(50%);
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .slider {
+    margin-top: 86px;
+
+    padding-bottom: 0;
+
+    font-size: 20px;
+  }
+
+  .slider__text {
+    font-size: 20px;
+    line-height: 20px;
+
+    border-bottom: 1px dotted rgba($color-text-main, 0.23);
+  }
+
+  .slider__wrapper {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 auto;
+    width: $width-tablet;
+  }
+
+  .slider__image {
+    margin: 0;
+
+    height: 517px;
+
+    background-color: transparent;
+    background-image: none;
+    background-size: 690px;
+    background-repeat: no-repeat;
+
+    &--after {
+      display: block;
+
+      position: relative;
+      width: 100%;
+
+      background-image: url("../img/after-tablet@1x.png");
+      background-position: 46px top;
+
+      &::before {
+        content: "";
+        display: block;
+
+        position: absolute;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $color-bg-main;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 169px;
+
+        z-index: -1;
+
+        width: 100%;
+        height: 462px;
+
+        background-color: #eaeaea;
+      }
+    }
+
+    &--before {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+
+      width: 50%;
+      height: 100%;
+
+      background-image: url("../img/before-tablet@1x.png");
+      background-position: 46px top;
+    }
+  }
+
+  .slider__bg {
+    display: block;
+
+    &--before {
+      content: "";
+      display: block;
+
+      position: absolute;
+
+      width: 50%;
+      height: 100%;
+
+      background-color: $color-bg-main;
+    }
+
+    &--after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 169px;
+
+      width: 50%;
+      height: 462px;
+
+      background-color: $color-bg-secondary;
+    }
+  }
+
+  .slider__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 10;
+
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .slider__button {
+    display: none;
+  }
+
+  .slider__range {
+    display: block;
+
+    margin: 0 22px;
+
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+  }
+
+  .slider__thumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid $color-border-main;
+    border-radius: 50%;
+
+    background-color: $color-bg-main;
+
+    box-shadow: 0 2px 5px rgba(#000000, 0.15);
+
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background-color: $color-bg-tertiary;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .slider {
+    margin: -34px 0 0;
+    padding-right: $margin-section-desktop - 40px;
+
+    width: 50%;
+  }
+
+  .slider__wrapper {
+    width: 100%;
+  }
+
+  .slider__image {
+    margin-top: -21px;
+
+    &--after {
+      background-image: url("../img/after-desktop@1x.png");
+      background-position: -40px 0;
+
+      &::before {
+        content: "";
+        display: block;
+
+        position: absolute;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $color-bg-main;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 190px;
+
+        z-index: -1;
+
+        width: 100%;
+        height: 432px;
+
+        background-color: #eaeaea;
+      }
+    }
+
+    &--before {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+
+      width: 50%;
+      height: 100%;
+
+      background-image: url("../img/before-desktop@1x.png");
+      background-position: -40px 0;
+    }
+  }
+
+  .slider__bg {
+    margin-top: 21px;
+    display: block;
+
+    &--before {
+      content: "";
+      display: block;
+
+      position: absolute;
+
+      width: 50%;
+      height: 100%;
+
+      background-color: $color-bg-main;
+    }
+
+    &--after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 169px;
+
+      width: 50%;
+      height: 461px;
+
+      background-color: $color-bg-secondary;
+    }
+  }
+
+  .slider__label {
+    margin-top: 40px;
   }
 }

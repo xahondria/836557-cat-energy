@@ -1,9 +1,19 @@
+$width-tablet: 768px !default;
+$width-desktop: 1440px !default;
+
+$color-text-secondary: #444444 !default;
+$color-text-quaternary: #222222 !default;
+
+$color-border-main: #cdcdcd !default;
+
+$font-content: "Arial", sans-serif !default;
+
 .additional-product__name {
   @include block-reset;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color: #222222;
+  color: $color-text-quaternary;
 
   text-transform: uppercase;
 }
@@ -42,4 +52,98 @@
 
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .additional-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    margin-top: 13px;
+    padding: 13px 38px 27px;
+
+    border-bottom: 1px solid $color-border-main;
+  }
+
+  .additional-product__name {
+    padding-bottom: 5px;
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-product__description {
+    width: 271px;
+  }
+
+  .additional-product__property {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__property-name {
+    padding: 0;
+    text-align: right;
+  }
+
+  .additional-product__property-value {
+    padding: 0;
+    text-align: right;
+  }
+
+  .additional-product__button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .additional-product {
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin-top: 0;
+    padding: 15px 2px 16px;
+
+    &:first-child {
+      border-top: 1px solid $color-border-main;
+    }
+  }
+
+  .additional-product__name {
+    padding: 0;
+    width: 245px;
+  }
+
+  .additional-product__description {
+    margin-left: 79px;
+    width: 287px;
+  }
+
+  .additional-product__property {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__property-name {
+    padding: 9px 0 0;
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  .additional-product__property-value {
+    padding: 9px 0 0;
+    text-align: right;
+  }
+
+  .additional-product__button {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-top: 0;
+    margin-left: 37px;
+    width: 245px;
+  }
 }

@@ -27,7 +27,11 @@ $margin-section: 20px !default;
   width: 30px;
   height: 30px;
 
-  &:not(:first-child) {
+  &--in {
+    margin-left: 25px;
+  }
+
+  &--fb {
     margin-left: 25px;
   }
 }
@@ -42,4 +46,45 @@ $margin-section: 20px !default;
   &:active {
     fill: rgba($color-bg-tertiary, 0.3);
   }
+}
+
+@media (min-width: $width-tablet) {
+  .social {
+    margin: 0;
+    padding: 0;
+
+    width: 30%;
+
+    border: none;
+  }
+
+  .social__item {
+
+
+    &--in {
+      margin-left: 25px;
+    }
+
+    &--fb {
+      margin-top: -5px;
+      margin-right: 7px;
+      margin-left: 18px;
+    }
+  }
+
+  .social__icon--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__icon--in {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+
 }
