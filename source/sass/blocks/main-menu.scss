@@ -285,18 +285,18 @@ $color-item-separator: #e6e6e6 !default;
           opacity: 0.6;
         }
       }
+
+      .main-menu__text {
+        &::after {
+          background-color: $color-bg-main;
+        }
+      }
     }
 
     &--active {
       .main-menu__text {
         &::after {
           bottom: -9px;
-          background-color: $color-bg-main;
-        }
-
-        &:hover,
-        &:active {
-          color: $color-text-tertiary;
         }
       }
     }

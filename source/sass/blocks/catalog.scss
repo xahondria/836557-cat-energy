@@ -64,3 +64,32 @@ $color-border-catalog-item: #ededed !default;
     border-bottom: none;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .catalog__title {
+    margin-top: 30px;
+    margin-bottom: 84px;
+
+    padding: 0 $margin-section-tablet;
+    width: 100%;
+
+    font-size: 60px;
+    text-align: left;
+
+    border-bottom: none;
+  }
+
+  .catalog__item {
+    display: block;
+
+    width: 245px;
+    border-bottom: none;
+  }
+}
