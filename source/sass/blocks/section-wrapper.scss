@@ -1,0 +1,26 @@
+$width-mobile: 320px !default;
+$width-tablet: 768px !default;
+$width-desktop: 1300px !default;
+
+.section-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $width-mobile) {
+  .section-wrapper {
+    width: $width-mobile;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .section-wrapper {
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .section-wrapper {
+    width: $width-desktop;
+  }
+}

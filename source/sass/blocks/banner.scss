@@ -1,5 +1,5 @@
 $width-tablet: 768px !default;
-$width-desktop: 1440px !default;
+$width-desktop: 1300px !default;
 
 $color-text-main: #111111 !default;
 $color-text-tertiary: #ffffff !default;
@@ -143,7 +143,7 @@ $margin-section: 20px !default;
 @media (min-width: $width-desktop) {
   .banner {
     margin-top: 82px;
-    padding: 0 191px;
+    padding: 0 120px;
 
     min-height: 474px;
   }
@@ -165,7 +165,7 @@ $margin-section: 20px !default;
   .banner__image {
     position: absolute;
     top: -135px;
-    left: 560px;
+    left: 489px;
 
     z-index: 10;
 

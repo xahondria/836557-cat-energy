@@ -1,12 +1,12 @@
 /*general*/
 
+@import "general/variables";
 @import "general/normalize";
 @import "general/global";
-@import "general/variables";
 @import "general/mixins";
 
 /*special blocks*/
-
+@import "blocks/section-wrapper";
 @import "blocks/visually-hidden";
 @import "blocks/block-wrapper";
 @import "blocks/link";
