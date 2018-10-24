@@ -159,8 +159,8 @@ $color-item-separator: #e6e6e6 !default;
     justify-content: space-between;
     align-items: center;
 
-    margin-left: $margin-section-tablet;
-    margin-right: $margin-section-tablet;
+    padding-left: $margin-section-tablet;
+    padding-right: $margin-section-tablet;
 
     font-size: 18px;
     font-weight: 400;
@@ -223,8 +223,8 @@ $color-item-separator: #e6e6e6 !default;
 @media (min-width: $width-desktop) {
   .main-menu {
     margin-top: 30px;
-    margin-right: $margin-section-desktop;
-    margin-left: $margin-section-desktop;
+    padding-right: $margin-section-desktop;
+    padding-left: $margin-section-desktop;
 
     background-color: transparent;
 

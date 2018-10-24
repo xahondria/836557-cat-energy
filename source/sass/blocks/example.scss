@@ -12,6 +12,7 @@ $color-text-secondary: #444444 !default;
 
 $color-bg-main: #ffffff !default;
 $color-bg-secondary: #f2f2f2 !default;
+$color-bg-slider-after: #eaeaea !default;
 
 .example {
   @include block-reset;
@@ -81,41 +82,22 @@ $color-bg-secondary: #f2f2f2 !default;
     position: relative;
     z-index: 1;
 
+    margin-top: 127px;
+    padding-top: 0;
+    padding-bottom: 42px;
+
+    background: linear-gradient(to right, $color-bg-secondary 0%, $color-bg-secondary 60%, $color-bg-slider-after 60%, $color-bg-slider-after 100%);
+  }
+
+  .example__center {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
-    margin-top: -8px;
-    padding-top: 0;
-  }
-
-  .example__bg {
-    position: absolute;
-    top: 135px;
-    left: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 83%;
-
-    background-color: $color-bg-secondary;
-
-    &::after {
-      content: "";
-      display: block;
-
-      position: absolute;
-      top: 0;
-      left: 50%;
-
-      width: 50%;
-      height: 100%;
-
-      background-color: #eaeaea;
-    }
   }
 
   .example__wrapper {
+    margin-top: -135px;
+
     margin-bottom: 34px;
     padding: 0 $margin-section-desktop;
     width: 50%;
@@ -123,6 +105,6 @@ $color-bg-secondary: #f2f2f2 !default;
 
   .example__text {
     margin-top: 146px;
-    padding-right: 65px;
+    padding-right: 135px;
   }
 }

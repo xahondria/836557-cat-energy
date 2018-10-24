@@ -84,14 +84,18 @@ $color-text-secondary: #444444 !default;
   .contacts {
     position: relative;
 
-    margin: 0;
+    margin: 0 auto -400px;
     padding: 0;
+
+    height: 400px;
   }
 
   .contacts__wrapper {
     position: absolute;
-    top: 134px;
-    left: 110px;
+    top: 49%;
+    left: 40px;
+
+    transform: translateY(-51%);
 
     z-index: 100;
 

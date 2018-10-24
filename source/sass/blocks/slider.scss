@@ -5,6 +5,7 @@ $margin-section-desktop: 40px !default;
 $color-bg-main: #ffffff !default;
 $color-bg-secondary: #f2f2f2 !default;
 $color-bg-tertiary: #68b738 !default;
+$color-bg-slider-after: #eaeaea !default;
 
 $color-border-main: #cdcdcd !default;
 
@@ -186,7 +187,7 @@ $color-text-main: #111111 !default;
         width: 100%;
         height: 462px;
 
-        background-color: #eaeaea;
+        background-color: $color-bg-slider-after;
       }
     }
 
@@ -308,7 +309,7 @@ $color-text-main: #111111 !default;
 
 @media (min-width: $width-desktop) {
   .slider {
-    margin: -34px 0 0;
+    margin: -169px 0 0;
     padding-right: $margin-section-desktop - 40px;
 
     width: 50%;
@@ -356,7 +357,7 @@ $color-text-main: #111111 !default;
         width: 100%;
         height: 432px;
 
-        background-color: #eaeaea;
+        background-color: $color-bg-slider-after;
       }
     }
 
@@ -402,7 +403,7 @@ $color-text-main: #111111 !default;
       top: 169px;
 
       width: 50%;
-      height: 461px;
+      height: 463px;
 
       background-color: $color-bg-secondary;
     }
