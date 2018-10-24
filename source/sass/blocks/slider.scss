@@ -21,6 +21,16 @@ $color-text-main: #111111 !default;
   line-height: 20px;
   color: $color-text-main;
   text-transform: uppercase;
+
+  border-bottom: 1px dotted rgba($color-text-main, 0.23);
+
+  &:hover {
+    border-bottom: 1px solid rgba($color-text-main, 0.4);
+  }
+
+  &:active {
+    border-bottom-color: transparent;
+  }
 }
 
 .slider__image {
@@ -126,8 +136,6 @@ $color-text-main: #111111 !default;
   .slider__text {
     font-size: 20px;
     line-height: 20px;
-
-    border-bottom: 1px dotted rgba($color-text-main, 0.23);
   }
 
   .slider__wrapper {
@@ -303,6 +311,15 @@ $color-text-main: #111111 !default;
       border-radius: 50%;
 
       background-color: $color-bg-tertiary;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px rgba(#000000, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $color-bg-tertiary;
+      box-shadow: 0 4px 5px rgba(#000000, 0.3);
     }
   }
 }
