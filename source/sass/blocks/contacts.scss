@@ -49,11 +49,6 @@ $color-text-secondary: #444444 !default;
 @media (min-width: $width-tablet) {
   .contacts {
     margin-top: 78px;
-
-    &--form {
-      margin-top: 72px;
-      padding-top: 45px;
-    }
   }
 
   .contacts__wrapper {
