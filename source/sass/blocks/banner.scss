@@ -1,5 +1,5 @@
 $width-tablet: 768px !default;
-$width-desktop: 1440px !default;
+$width-desktop: 1300px !default;
 
 $color-text-main: #111111 !default;
 $color-text-tertiary: #ffffff !default;
@@ -11,6 +11,8 @@ $margin-section: 20px !default;
 
 .banner {
   text-align: center;
+
+  background: linear-gradient(to bottom, $color-bg-banner 0%, $color-bg-banner 305px, $color-bg-main 305px, $color-bg-main 100%);
 }
 
 .banner__background {
@@ -76,6 +78,12 @@ $margin-section: 20px !default;
   .banner {
     position: relative;
     text-align: left;
+
+    background: $color-bg-main;
+  }
+
+  .banner__wrapper {
+    position: relative;
   }
 
   .banner__background {
@@ -143,9 +151,16 @@ $margin-section: 20px !default;
 @media (min-width: $width-desktop) {
   .banner {
     margin-top: 82px;
-    padding: 0 191px;
+    padding: 0;
 
     min-height: 474px;
+
+    background: transparent;
+  }
+
+  .banner__wrapper {
+    position: relative;
+    padding: 0 120px;
   }
 
   .banner__background {
@@ -165,7 +180,7 @@ $margin-section: 20px !default;
   .banner__image {
     position: absolute;
     top: -135px;
-    left: 560px;
+    left: 489px;
 
     z-index: 10;
 

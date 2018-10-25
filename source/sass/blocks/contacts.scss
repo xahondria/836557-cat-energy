@@ -1,5 +1,9 @@
 $width-tablet: 768px !default;
-$width-desktop: 1440px !default;
+$width-desktop: 1300px !default;
+
+$margin-section: 20px;
+$margin-section-tablet: 30px;
+$margin-section-desktop: 40px;
 
 $color-bg-main: #ffffff !default;
 $color-bg-secondary: #f2f2f2 !default;
@@ -8,8 +12,7 @@ $color-text-main: #111111 !default;
 $color-text-secondary: #444444 !default;
 
 .contacts {
-  padding-top: 12px;
-  padding-bottom: 10px;
+  background-color: $color-bg-main;
 
   &--secondary {
     background-color: $color-bg-secondary;
@@ -19,6 +22,8 @@ $color-text-secondary: #444444 !default;
 .contacts__wrapper {
   display: flex;
   align-items: center;
+
+  padding: 12px $margin-section;
 }
 
 .contacts__text-call {
@@ -43,19 +48,11 @@ $color-text-secondary: #444444 !default;
 
 @media (min-width: $width-tablet) {
   .contacts {
-    margin-top: 79px;
+    margin-top: 78px;
+  }
+
+  .contacts__wrapper {
     padding: 40px 71px 40px;
-
-
-    &--catalog {
-      margin-top: 76px;
-      padding-top: 45px;
-    }
-
-    &--form {
-      margin-top: 72px;
-      padding-top: 45px;
-    }
   }
 
   .contacts__text-call {
@@ -84,14 +81,18 @@ $color-text-secondary: #444444 !default;
   .contacts {
     position: relative;
 
-    margin: 0;
+    margin: 0 auto -400px;
     padding: 0;
+
+    height: 400px;
   }
 
   .contacts__wrapper {
     position: absolute;
-    top: 134px;
-    left: 110px;
+    top: 49%;
+    left: 50%;
+
+    transform: translate(-107%, -51%);
 
     z-index: 100;
 

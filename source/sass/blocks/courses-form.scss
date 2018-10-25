@@ -1,11 +1,11 @@
 $width-tablet: 768px !default;
-$width-desktop: 1440px !default;
+$width-desktop: 1300px !default;
 
 $color-text-main: #111111 !default;
 
 $margin-section: 20px !default;
 $margin-section-tablet: 30px !default;;
-$margin-section-desktop: 110px !default;;
+$margin-section-desktop: 40px !default;;
 
 .courses-form__title {
   @include block-reset;
@@ -58,7 +58,7 @@ $margin-section-desktop: 110px !default;;
 
   .courses-form__text {
     margin: 55px $margin-section-desktop 0;
-    padding-right: 60%;
+    padding-right: 65%;
     padding-left: 0;
 
     font-size: 20px;

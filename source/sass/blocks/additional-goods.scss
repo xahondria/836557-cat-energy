@@ -1,9 +1,9 @@
 $width-tablet: 768px !default;
-$width-desktop: 1440px !default;
+$width-desktop: 1300px !default;
 
 $margin-section: 20px !default;
 $margin-section-tablet: 30px !default;
-$margin-section-desktop: 110px !default;
+$margin-section-desktop: 40px !default;
 
 $color-bg-tertiary: #68b738 !default;
 
@@ -13,8 +13,8 @@ $color-text-main: #111111 !default;
 
 $margin-section: 20px !default;
 
-.additional-goods {
-  margin: 0 $margin-section;
+.additional-goods__wrapper {
+  padding: 0 $margin-section;
 }
 
 .additional-goods__title-wrapper {
@@ -23,6 +23,7 @@ $margin-section: 20px !default;
   align-items: flex-start;
 
   margin-top: 28px;
+  padding: 0 $margin-section;
 
   border-bottom: 1px solid $color-border-main;
 }
@@ -65,12 +66,13 @@ $margin-section: 20px !default;
 }
 
 @media (min-width: $width-tablet) {
-  .additional-goods {
-    margin: 0 $margin-section-tablet;
+  .additional-goods__wrapper {
+    padding: 0 $margin-section-tablet;
   }
 
   .additional-goods__title-wrapper {
     margin-top: 7px;
+    padding: 0 $margin-section-tablet;
 
     border-bottom: none;
   }
@@ -80,7 +82,7 @@ $margin-section: 20px !default;
 
     margin-left: 37px;
 
-    padding-bottom: 80px;
+    padding-bottom: 82px;
 
     font-size: 36px;
     line-height: 36px;
@@ -108,20 +110,19 @@ $margin-section: 20px !default;
 }
 
 @media (min-width: $width-desktop) {
-  .additional-goods {
-    margin: 0 $margin-section-desktop 47px;
-  }
-
   .additional-goods__wrapper {
     display: flex;
+    padding: 0 $margin-section-desktop 86px;
   }
 
   .additional-goods__title-wrapper {
     margin-top: 13px;
+    padding: 0 $margin-section-desktop;
   }
 
   .additional-goods__title {
     margin-left: 0;
+    padding-bottom: 80px;
 
     &::before {
       left: -110px;

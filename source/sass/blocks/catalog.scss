@@ -1,9 +1,9 @@
 $width-tablet: 768px !default;
-$width-desktop: 1440px !default;
+$width-desktop: 1300px !default;
 
 $margin-section: 20px !default;
 $margin-section-tablet: 30px !default;
-$margin-section-desktop: 110px !default;
+$margin-section-desktop: 40px !default;
 
 $color-border-catalog-item: #ededed !default;
 
@@ -38,7 +38,7 @@ $color-border-catalog-item: #ededed !default;
 }
 
 @media (min-width: $width-tablet) {
-  .catalog {
+  .catalog__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -64,10 +64,6 @@ $color-border-catalog-item: #ededed !default;
 }
 
 @media (min-width: $width-desktop) {
-  .catalog {
-    margin: 0 ($margin-section-desktop - 40px);
-  }
-
   .catalog__title {
     margin-top: 48px;
     margin-bottom: 84px;
