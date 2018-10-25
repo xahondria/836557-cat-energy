@@ -17,6 +17,25 @@ $font-content: "Arial", sans-serif !default;
 .product {
   padding-right: $margin-section;
   padding-left: $margin-section;
+
+  &--expand {
+    &::before {
+      content: "";
+      display: block;
+
+      width: 30px;
+      height: 30px;
+
+      margin: 26px auto 24px;
+
+      background-image: url("../img/icon-plus-mobile.svg");
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      opacity: 0.2;
+    }
+  }
 }
 
 .product__image-wrapper {
@@ -91,20 +110,6 @@ $font-content: "Arial", sans-serif !default;
   line-height: 20px;
 }
 
-.product__expand {
-  height: 30px;
-
-  margin-top: 26px;
-  margin-bottom: 24px;
-
-  background-image: url("../img/icon-plus-mobile.svg");
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  opacity: 0.2;
-}
-
 @media (min-width: $width-tablet) {
   .product {
     position: relative;
@@ -113,7 +118,7 @@ $font-content: "Arial", sans-serif !default;
 
     padding: 0 37px 39px;
 
-    &::before {
+    &::after {
       content: "";
       display: block;
 
@@ -134,6 +139,22 @@ $font-content: "Arial", sans-serif !default;
       border: 1px solid rgba($color-border-main, 0.5);
 
       &::before {
+        content: "";
+        display: block;
+        margin: 54px auto 49px;
+
+        width: 60px;
+        height: 60px;
+
+        background-image: url("../img/icon-plus.svg");
+        background-size: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        opacity: 0.2;
+      }
+
+      &::after {
         display: none;
       }
     }
@@ -209,18 +230,6 @@ $font-content: "Arial", sans-serif !default;
       margin-top: 83px;
     }
   }
-
-  .product__expand {
-    height: 60px;
-
-    margin-top: 54px;
-    margin-bottom: 49px;
-
-    background-image: url("../img/icon-plus.svg");
-    background-size: 60px;
-
-    opacity: 0.2;
-  }
 }
 
 @media (min-width: $width-desktop) {
@@ -269,17 +278,5 @@ $font-content: "Arial", sans-serif !default;
     &--expand {
       margin-top: 83px;
     }
-  }
-
-  .product__expand {
-    height: 60px;
-
-    margin-top: 54px;
-    margin-bottom: 49px;
-
-    background-image: url("../img/icon-plus.svg");
-    background-size: 60px;
-
-    opacity: 0.2;
   }
 }
