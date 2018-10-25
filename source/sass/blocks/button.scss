@@ -22,6 +22,7 @@ $color-bg-tertiary-darken: #5eaa2f !default;
   border: none;
 
   cursor: pointer;
+  appearance: none;
 
   &:hover {
     background-color: $color-bg-tertiary-darken;
