@@ -101,6 +101,18 @@ $color-border-main: #cdcdcd !default;
     &:not(:last-child) {
       margin-right: 42px;
     }
+
+    &:first-child {
+      .efficiency__item-name {
+        width: 110px;
+      }
+    }
+
+    &:last-child {
+      .efficiency__item-name {
+        width: 138px;
+      }
+    }
   }
 
   .efficiency__item-name {
