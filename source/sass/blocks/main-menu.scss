@@ -35,6 +35,16 @@ $color-item-separator: #e6e6e6 !default;
     }
   }
 
+  &--open {
+    position: relative;
+
+    .main-menu__list {
+      display: block;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
   &--index {
     .main-menu__link--logo {
       cursor: default;
@@ -162,6 +172,10 @@ $color-item-separator: #e6e6e6 !default;
   background-position: center;
 
   cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 @media (min-width: $width-tablet) {
