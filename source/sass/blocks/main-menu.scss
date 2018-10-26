@@ -191,6 +191,12 @@ $color-item-separator: #e6e6e6 !default;
     font-weight: 400;
     line-height: 25px;
     text-align: right;
+
+    &--collapsed {
+      .main-menu__list {
+        display: flex;
+      }
+    }
   }
 
   .main-menu__list {
