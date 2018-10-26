@@ -24,6 +24,28 @@ $color-item-separator: #e6e6e6 !default;
 
   background-color: $color-bg-main;
 
+  &--collapsed {
+    .main-menu__hamburger {
+      background-image: url("../img/icon-mobile-menu.svg");
+      background-size: 24px 18px;
+    }
+
+    .main-menu__list {
+      display: none;
+    }
+  }
+
+  &--open {
+    position: relative;
+
+    .main-menu__list {
+      display: block;
+      position: absolute;
+      z-index: 1000;
+      width: 100%;
+    }
+  }
+
   &--index {
     .main-menu__link--logo {
       cursor: default;
@@ -151,6 +173,10 @@ $color-item-separator: #e6e6e6 !default;
   background-position: center;
 
   cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -166,6 +192,23 @@ $color-item-separator: #e6e6e6 !default;
     font-weight: 400;
     line-height: 25px;
     text-align: right;
+
+    &--collapsed {
+      .main-menu__list {
+        display: flex;
+      }
+    }
+
+    &--open {
+      position: static;
+
+      .main-menu__list {
+        display: flex;
+        position: static;
+        z-index: 0;
+        width: auto;
+      }
+    }
   }
 
   .main-menu__list {

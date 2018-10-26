@@ -71,6 +71,11 @@ $font-content: "Arial", sans-serif !default;
   }
 }
 
+.product__name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .product__property {
 
   font-family: $font-content;
