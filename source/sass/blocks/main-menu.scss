@@ -41,6 +41,7 @@ $color-item-separator: #e6e6e6 !default;
     .main-menu__list {
       display: block;
       position: absolute;
+      z-index: 1000;
       width: 100%;
     }
   }
@@ -195,6 +196,17 @@ $color-item-separator: #e6e6e6 !default;
     &--collapsed {
       .main-menu__list {
         display: flex;
+      }
+    }
+
+    &--open {
+      position: static;
+
+      .main-menu__list {
+        display: flex;
+        position: static;
+        z-index: 0;
+        width: auto;
       }
     }
   }
