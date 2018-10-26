@@ -24,6 +24,17 @@ $color-item-separator: #e6e6e6 !default;
 
   background-color: $color-bg-main;
 
+  &--collapsed {
+    .main-menu__hamburger {
+      background-image: url("../img/icon-mobile-menu.svg");
+      background-size: 24px 18px;
+    }
+
+    .main-menu__list {
+      display: none;
+    }
+  }
+
   &--index {
     .main-menu__link--logo {
       cursor: default;
