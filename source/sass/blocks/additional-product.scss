@@ -129,13 +129,15 @@ $font-content: "Arial", sans-serif !default;
 
   .additional-product__property-name {
     padding: 9px 0 0;
+    width: 85%;
     text-align: left;
     vertical-align: bottom;
   }
 
   .additional-product__property-value {
     padding: 9px 0 0;
-    text-align: right;
+    width: auto;
+    text-align: left;
   }
 
   .additional-product__button {
