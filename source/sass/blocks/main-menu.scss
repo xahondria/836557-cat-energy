@@ -306,8 +306,9 @@ $color-item-separator: #e6e6e6 !default;
 
         background-color: $color-bg-banner;
         background-image: url("../img/index-background-desktop@1x.jpg");
-        background-size: 720px auto;
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: right center;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/index-background-desktop@2x.jpg");
