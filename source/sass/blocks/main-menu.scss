@@ -299,7 +299,7 @@ $color-item-separator: #e6e6e6 !default;
         position: absolute;
         top: 0;
         right: 0;
-        z-index: -1;
+        z-index: 1;
 
         width: 50%;
         height: 696px;

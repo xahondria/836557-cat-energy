@@ -12,12 +12,13 @@ $margin-section: 20px !default;
 .banner {
   text-align: center;
 
-  background: linear-gradient(to bottom, $color-bg-banner 0%, $color-bg-banner 305px, $color-bg-main 305px, $color-bg-main 100%);
+  background: linear-gradient(to top, $color-bg-main 0%, $color-bg-main 175px, $color-bg-banner 175px, $color-bg-banner 100%);
 }
 
 .banner__background {
   min-height: 305px;
   padding-top: 27px;
+  padding-bottom: 20px;
 
   background-color: $color-bg-banner;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -135,7 +136,7 @@ $margin-section: 20px !default;
 
   .banner__button {
     position: absolute;
-    top: 229px;
+    bottom: 529px;
     left: 119px;
 
     display: inline-block;
@@ -150,12 +151,25 @@ $margin-section: 20px !default;
 
 @media (min-width: $width-desktop) {
   .banner {
+    position: relative;
     margin-top: 82px;
     padding: 0;
 
     min-height: 474px;
+    border-color: transparent;
 
-    background: transparent;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: 50%;
+      height: 100%;
+
+      background-color: $color-bg-banner;
+    }
   }
 
   .banner__wrapper {
@@ -175,6 +189,7 @@ $margin-section: 20px !default;
 
   .banner__text {
     margin: 41px 0 0;
+    padding-right: 50px;
   }
 
   .banner__image {
